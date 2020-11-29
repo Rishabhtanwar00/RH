@@ -6,9 +6,7 @@
     align-items: center;
     justify-content: center;
     margin: auto;
-    background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(7px);
-    border-radius: 15px;
+    /* background-color: #b90808; */
 }
 @media screen and (max-width : 1260px){
     .collection{

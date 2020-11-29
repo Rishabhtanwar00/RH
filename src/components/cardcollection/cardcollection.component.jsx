@@ -4,7 +4,7 @@ import './cardcollection.styles.css';
 
 import Card from '../card/card.component';
 
-import Items from './cardcollection.data';
+import Items from './cardcollection.data.js';
 
 
 const CardCollection =()=>{  

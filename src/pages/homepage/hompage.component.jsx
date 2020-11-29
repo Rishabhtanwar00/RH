@@ -8,13 +8,16 @@ import CardCollection from '../../components/cardcollection/cardcollection.compo
 
 import './homepage.styles.css';
 
+import HostACampCard from '../../components/hostacampcard/hostacardcamp.component';
+
 class HomePage extends React.Component{
       render(){
             return(
      <div className="homepage">
            <Navbar/>
            <CardCollection/>
-           <NavbarForMobile className='navbar-mobile'/>
+           <HostACampCard/>
+           <NavbarForMobile/>
      </div>
 );
       }

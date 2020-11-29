@@ -7,6 +7,8 @@
     outline: none;
     border: none;
     letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 250ms;
 }
 .navbar-button{
     margin: 10px;
@@ -15,14 +17,22 @@
 
 .card-button{
     width: 280px;
-    font-size: 20px;
+    font-size: 23px;
+    position: absolute;
+    bottom: 20px;
 }
 .main-button:hover{
     background: #9b0301;
     transition: all 250ms;
 }
- @media screen and(max-width: 700px){
+.hostcard-button{
+    width: 50vw;
+}
+ @media screen and (max-width: 700px){
     .navbar-button{
-        font-size: 10px;
+        font-size: 17px;
+    }
+    .hostcard-button{
+        width: 80vw;
     }
  }
