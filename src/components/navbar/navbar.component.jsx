@@ -4,7 +4,7 @@ import {MenuItems} from "./menuitems";
 
 import './navbar.styles.css';
 
-import {Button} from "../navbutton/navbutton.component";
+import CustomButton from '../custombutton/custombutton.component';
 
 import logo from '../../assets/logo.jpeg';
 
@@ -37,8 +37,8 @@ class Navbar extends React.Component{
                 } )}
             </div>
             <div className="buttons">
-               <Button>Register</Button>
-               <Button>Log in</Button>
+               <CustomButton className='nav-buttons' navBarButton>Register</CustomButton>
+               <CustomButton className='nav-buttons' navBarButton>Log in</CustomButton>
             </div>
             </div>
             </nav>

@@ -9,9 +9,9 @@ body{
 @media screen and (max-width: 960px){
 .navbar-for-mobile{
     display: block;
-    position: absolute;
+    position: fixed;
     top: 85vh;
-    width: 90%;
+    width: 80%;
     height: 50px;
     left:50%;
     transform:translateX(-50%);
@@ -44,6 +44,11 @@ p{
     font-size: 20px;
     margin-bottom: -7px;
 }
+}
+@media screen and (max-width: 500px){
+    .navbar-for-mobile{
+        width: 90%;
+    }
 }
 @media screen and (max-width: 400px){
    .navbar-for-mobile{
