@@ -1,0 +1,19 @@
+.collection2{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
+    align-items: center;
+    justify-content: center;
+    margin-left: 17vw;
+    grid-gap:50px;
+    
+}
+@media screen and (max-width: 1200px){
+    .collection2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+    }
+}

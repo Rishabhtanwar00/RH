@@ -16,10 +16,29 @@
 }
 
 .card-button{
-    width: 280px;
+    width: 300px;
     font-size: 23px;
     position: absolute;
     bottom: 20px;
+}
+.card2-button{
+    width: 430px;
+    font-size: 23px;
+    position: absolute;
+    bottom: 20px;
+    padding: 20px 0;
+}
+.home1-button{
+    width: 250px;
+    font-size: 25px;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+.home2-button{
+    width: 450px;
+    padding: 20px 0;
+    font-size: 23px;
+    margin-top: 20px;
 }
 .main-button:hover{
     background: #9b0301;
@@ -34,5 +53,17 @@
     }
     .hostcard-button{
         width: 80vw;
+    }
+    .home1-button{
+        font-size: 23px;
+        padding: 20px 0;
+    }
+    .home2-button{
+        font-size: 20px;
+        width: 300px;
+        margin-top: 0;
+    }
+    .card2-button{
+        width: 95%;
     }
  }

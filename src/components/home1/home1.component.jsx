@@ -4,17 +4,18 @@ import './home1.styles.css';
 
 import CustomButton from '../custombutton/custombutton.component';
 
-const home1= () =>{
+const Home1= () =>{
     return(
         <div className="home1-container">
-          <div className="heading">
-            Donate <span>Blood</span>
+          <div className="content">
+            <div className="heading">
+              Donate <span>Blood,</span>
+            </div>
+            <p>Give Smile to someone</p>
+            <CustomButton home1Button>Donate Blood</CustomButton>
           </div>
-          <p>Give Smile to someone</p>
-          
         </div>
-        
     )
 }
 
-export default home1;
+export default Home1;

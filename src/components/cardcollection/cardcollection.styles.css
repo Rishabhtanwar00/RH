@@ -1,11 +1,13 @@
 .collection{
-    padding: 20px 180px;
+    padding: 0 180px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(370px,1fr));
     align-items: center;
     justify-content: center;
     margin: auto;
+    position: relative;
+    top: -150px;
     /* background-color: #b90808; */
 }
 @media screen and (max-width : 1260px){
