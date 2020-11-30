@@ -14,6 +14,10 @@ import Home2 from '../../components/home2/home2.component';
 
 import CardCollection2 from '../../components/cardcollection2/cardcollection2.component';
 
+import Home3 from '../../components/home3/home3.component';
+
+import Footer from "../../components/footer/footer.component";
+
 import NavbarForMobile from '../../components/navbarformobile/navbar.component';
 
 class HomePage extends React.Component{
@@ -26,6 +30,8 @@ class HomePage extends React.Component{
            <HostACampCard/>
            <Home2/>
            <CardCollection2/>
+           <Home3/>
+           <Footer/>
            <NavbarForMobile/>
      </div>
 );
