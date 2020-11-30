@@ -14,7 +14,7 @@ import Linkedin from '../../assets/linkedin.svg';
 
 import Youtube from '../../assets/youtube.svg';
 
-import { BsHeartFill } from 'react-icons/bs';
+import Input from '../input/input.component';
 
 const Footer= () => {
     return(
@@ -50,7 +50,7 @@ const Footer= () => {
                 </div>
               </div>
                 <div className="get-notification">
-                    <input type="text" placeholder='Enter your email address'/>
+                   <Input type='email' placeholder='Enter your email address'/>
                     <CustomButton notificationButton>Get latest notification</CustomButton>
                 </div>
             </div>
