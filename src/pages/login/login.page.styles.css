@@ -1,0 +1,51 @@
+.login-container
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 50px 0px 0px;
+}
+.Login-Svg
+{
+    height: 450px;
+    width: 40%;
+}
+.login-container form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+.login{
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width : 960px)
+{
+    .login-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .Login-Svg{
+        position: relative;
+        width: 350px;
+        height: 40vh;
+        top: 30px;
+        opacity: 0.4;
+    }
+    .login-container form{
+        position: absolute;
+        top: 150px;
+    }
+}

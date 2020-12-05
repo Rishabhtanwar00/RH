@@ -5,7 +5,7 @@ import './custombutton.styles.css';
 const CustomButton = ({ children , navBarButton , cardButton,
                         hostCardButton , home1Button , home2Button,
                         card2Button , home3Button , notificationButton,
-                        guideButton }) =>{
+                        guideButton  }) =>{
   return(
       <button className={`${navBarButton ? 'navbar-button' : ' '} ${cardButton ? 'card-button' : ' '}
        ${hostCardButton ? 'hostcard-button' : ' '} ${card2Button ? 'card2-button' : ' '}

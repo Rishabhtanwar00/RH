@@ -1,0 +1,82 @@
+.registration1-conatiner{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    margin-top: 100px;
+}
+
+.registration1-conatiner p{
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 30px;
+}
+.registration1-conatiner form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form small{
+    position: relative;
+    top: -15px;
+    font-size: 10px;
+    left: -60px;
+    margin-bottom: 10px;
+}
+.registration1-conatiner button{
+    background: #FE1F1A;
+    font-size: 20px;
+    padding: 15px 10px;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+    border: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 250ms;
+    width: 250px;
+}
+.registration1-conatiner button:hover{
+    background: #9b0301;
+    transition: all 250ms;
+}
+.registration1-conatiner .bar{
+    width: 15px;
+    height: 350px;
+    background: rgb(165, 165, 165);
+    border-radius: 10px;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+}
+.registration1-conatiner .bar .inner-bar{
+    height: 20%;
+    background: #FE1F1A;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 960px){
+    .registration1-conatiner{
+        margin: 100px 0 0 12px;
+        padding-bottom: 200px;
+    }
+    form small{
+        top: -15px;
+        left: -45px;
+    }
+    .registration1-conatiner .bar{
+        width: 250px;
+        height: 5px;
+        display: block;
+        /* transform: rotate(270deg); */
+        position: relative;
+        top: -32.5px;
+        left: 0;
+    }
+    .registration1-conatiner .bar .inner-bar{
+        width: 20%;
+        height: 5px;
+    }
+}

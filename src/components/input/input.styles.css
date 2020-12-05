@@ -15,3 +15,18 @@ input::placeholder{
     font-size: 15px;
     padding: 20px;
 }
+.registration-input{
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+.registration-input::placeholder{
+  color: rgb(34, 30, 30);
+}
+
+@media screen and (max-width:960px){
+  .registration-input{
+    width: 250px;
+    padding: 13px;
+  }
+}
