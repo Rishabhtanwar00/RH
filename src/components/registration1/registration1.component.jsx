@@ -22,32 +22,37 @@ class Registration1 extends React.Component{
       }
       handleChange = (e) =>{
         this.setState({
-          [e.target.name]:e.target.value,
-          [e.target.a_num]:e.target.value,
-          [e.target.email]:e.target.value,
-          [e.target.password]:e.target.value
+          showComponent: true,
+          [e.target.name]: e.target.value,
+          [e.target.a_num]: e.target.value,
+          [e.target.email]: e.target.value,
+          [e.target.password]: e.target.value
         })
       }
-      handleSubmit = (e) =>{
+      async handleSubmit(e){
         e.preventDefault();
-        const name=this.state.name;
-        const a_num=this.state.a_num;
-        const email=this.state.email;
-        const password=this.state.password;
-
-        const data=[
-          name,
-          a_num,
-          email,
-          password
-        ]
-        let url='https://api-rhpositive.herokuapp.com/bloodbank/add-donor/';
-        axios.post(url,data)
-        .then(res =>{
-          console.log(res);
-        })
-        .catch(err => console.log(err));
-      };
+        try{
+            console.log(this.state);
+            let form_data = new FormData();
+            form_data.append('name', this.state.name);
+            form_data.append('a_num', this.state.a_num);
+            form_data.append('email', this.state.email);
+            form_data.append('password', this.state.password);
+            let url = 'https://api-rhpositive.herokuapp.com/bloodbank/add-donor/';
+            axios.post(url, form_data, {
+              headers: {
+                  'content-type': 'application/json'
+              }
+             })
+            .then(response =>{ 
+              alert("hello1");
+               console.log(response.data)
+              })
+        }
+            catch(e){
+            console.log(e);
+        }
+      }
       _onButtonClick() {
         this.setState({
           showComponent: false
@@ -64,14 +69,14 @@ class Registration1 extends React.Component{
                     <div className="inner-bar"></div>
               </div>
             <form onSubmit={this.handleSubmit.bind(this)}>
-               <Input type='text' placeholder='Enter your name' id='name' value={this.state.name} onChange={this.handleChange.bind(this)} registrationInput/>
+              <input type="text" name="name" placeholder='Enter your name' id='name' value={this.state.value} onChange={this.handleChange}/>
                <small>Name should be as per aadhar card</small>
-               <Input type='number' placeholder='Enter Aadhar number' id='a_num' value={this.state.a_num} onChange={this.handleChange.bind(this)} registrationInput/>
-               <Input type='email' placeholder='Enter your email' id='email' value={this.state.email} onChange={this.handleChange.bind(this)} registrationInput/>
-               <Input type='password' placeholder='Choose password' id='password' value={this.state.password} onChange={this.handleChange.bind(this)} registrationInput/>
-               <button type='button' onClick={() => this._onButtonClick()}>Enter</button>
+               <input type='number' name='a_num' placeholder='Enter Aadhar number' id='a_num' value={this.state.value} onChange={this.handleChange}/>
+               <input type='email' name='email' placeholder='Enter your email' id='email' value={this.state.value} onChange={this.handleChange}/>
+               <input type='password' name='password' placeholder='Choose password' id='password' value={this.state.value} onChange={this.handleChange}/>
+               {/* <button type='button' onClick={() => this._onButtonClick()}>Enter</button> */}
                
-                {/* <input type='submit'/> */}
+                <input type='submit'/>
             </form>
         </div> 
             :

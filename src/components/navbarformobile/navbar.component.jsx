@@ -19,23 +19,23 @@ const NavbarForMobile = () =>{
     return(
        <div className="navbar-for-mobile">
        <div className="options">
-          <Link className="option">
+          <Link className="option" to='/'>
              <div className="icon"><BiHome/></div>
              <p>Home</p>
           </Link> 
-          <Link className="option">
+          <Link className="option" to='/'>
              <div className="icon"><BsDroplet/></div>
              <p>Donate blood</p>
           </Link> 
-          <Link className="option">
+          <Link className="option" to='/'>
              <div className="icon"><FiAward/></div>
              <p>Host camp</p>
           </Link> 
-          <Link className="option">
+          <Link className="option" to='/about'>
              <div className="icon"><BsPeople/></div>
              <p>About us</p>
           </Link> 
-          <Link className="option">
+          <Link className="option" to='/contact-us'>
              <div className="icon"><IoCallOutline/></div>
              <p>Contact</p>
           </Link> 

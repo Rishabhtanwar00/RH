@@ -10,6 +10,10 @@ import Login from './pages/login/login.page';
 
 import AboutPage from './pages/about/about.page';
 
+import ContactPage from './pages/contact/contact.page';
+
+import NameForm from './pages/form/form';
+
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 class App extends React.Component {
@@ -22,6 +26,8 @@ class App extends React.Component {
          <Route path='/registration' component={ Registration } />
          <Route path='/login' component={ Login } />
          <Route path='/about' component={ AboutPage } />
+         <Route path='/contact-us' component={ ContactPage } />
+         <Route path='/form' component={ NameForm } />
        </Switch>
        </BrowserRouter>
      </div>

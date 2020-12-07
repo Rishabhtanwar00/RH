@@ -10,14 +10,14 @@ export const MenuItems = [
         title : 'Donate Blood',
         url : '#',
         cName : 'nav-links',
-        to: ''
+        to: '/'
     },
 
     {
         title : 'Host Camp',
         url : '#',
         cName : 'nav-links',
-        to: ''
+        to: '/form'
     },
 
     {
@@ -31,6 +31,6 @@ export const MenuItems = [
         title : 'Contact us',
         url : '#',
         cName : 'nav-links',
-        to: ''
+        to: '/contact-us'
     },
 ]
