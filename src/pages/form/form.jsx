@@ -1,47 +1,41 @@
-import React from 'react';
+import React from "react";
 
-class NameForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { name: '' };
+import CheckBoxes from "../../components/checkbox/checkbox.data";
+
+import CheckBox1 from "../../components/checkbox/checkbox1.component";
+
+import PropTypes from "prop-types";
+
+class Page extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      checkedItems: new Map(),
+    };
+    this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange = (event) => {
-    this.setState({[event.target.name]: event.target.value});
+  handleChange(e) {
+    const items = e.target.name;
+    const isChecked = e.target.checked;
   }
-
-  async handleSubmit(event){
-      try{
-          let result=await fetch('https://api-rhpositive.herokuapp.com/bloodbank/add-donor/',{
-              method: 'post',
-              headers:{
-                  'Accept': 'application/json',
-                  'content-type':'application/json'
-              },
-              body: JSON.stringify(this.state)
-          }).then(function(response){
-            console.log("result" +result);
-            return response.json();
-          })
-          console.log("result" +result);
-      }catch(e){
-          console.log(e);
-      }
-    }
-
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <label>
-          Name:
-          <input type="text" value={this.state.value} name="name" onChange={this.handleChange} />
-        </label>
-        <input type="submit" value="Submit" />
-      </form>
+      <React.Fragment>
+        {CheckBoxes.map((item) => (
+          <label key={item.key}>
+            {item.name}
+            <CheckBox1
+              name={item.name}
+              checked={this.state.checkedItems.get(item.name)}
+              onChange={this.handleChange}
+            />
+          </label>
+        ))}
+      </React.Fragment>
     );
   }
 }
 
-
-export default NameForm;
+export default Page;
