@@ -1,36 +1,42 @@
-import React from 'react';
+import React from "react";
 
-import './App.css';
+import "./App.css";
 
-import Homepage from './pages/homepage/hompage.component';
+import Homepage from "./pages/homepage/hompage.component";
 
-import Registration from './pages/registration/registration.page';
+import Registration from "./pages/registration/registration.page";
 
-import Login from './pages/login/login.page';
+import Login from "./pages/login/login.page";
 
-import AboutPage from './pages/about/about.page';
+import AboutPage from "./pages/about/about.page";
 
-import ContactPage from './pages/contact/contact.page';
+import ContactPage from "./pages/contact/contact.page";
 
-import NameForm from './pages/form/form';
+import NameForm from "./pages/form/form";
 
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import DashBoard from "./pages/dashboard/dashboard.page";
+
+import Hospital from "./pages/hospital/hospital.page";
+
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 class App extends React.Component {
-  render(){
-  return (
-     <div>
-       <BrowserRouter>
-       <Switch>
-         <Route exact path='/' component={ Homepage } />
-         <Route path='/registration' component={ Registration } />
-         <Route path='/login' component={ Login } />
-         <Route path='/about' component={ AboutPage } />
-         <Route path='/contact-us' component={ ContactPage } />
-         <Route path='/form' component={ NameForm } />
-       </Switch>
-       </BrowserRouter>
-     </div>
+  render() {
+    return (
+      <div>
+        <BrowserRouter>
+          <Switch>
+            <Route exact path="/" component={Homepage} />
+            <Route path="/registration" component={Registration} />
+            <Route path="/login" component={Login} />
+            <Route path="/about" component={AboutPage} />
+            <Route path="/contact-us" component={ContactPage} />
+            <Route path="/dashboard" component={DashBoard} />
+            <Route path="/form" component={NameForm} />
+            <Route path="/hospital" component={Hospital} />
+          </Switch>
+        </BrowserRouter>
+      </div>
     );
   }
 }

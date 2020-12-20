@@ -16,23 +16,32 @@ class Page extends React.Component {
   }
 
   handleChange(e) {
-    const items = e.target.name;
+    const item = e.target.name;
     const isChecked = e.target.checked;
+    this.setState((prevstate) => ({
+      checkedItems: prevstate.checkedItems.set(item, e.target.name),
+    }));
   }
-
+  handleSubmit(e) {
+    e.preventDefault();
+    console.log(this.state);
+  }
   render() {
     return (
       <React.Fragment>
-        {CheckBoxes.map((item) => (
-          <label key={item.key}>
-            {item.name}
-            <CheckBox1
-              name={item.name}
-              checked={this.state.checkedItems.get(item.name)}
-              onChange={this.handleChange}
-            />
-          </label>
-        ))}
+        <form onSubmit={this.handleSubmit.bind(this)}>
+          {CheckBoxes.map((item) => (
+            <label key={item.key}>
+              {item.name}
+              <CheckBox1
+                name={item.name}
+                checked={this.state.checkedItems.get(item.name)}
+                onChange={this.handleChange}
+              />
+            </label>
+          ))}
+          <input type="submit" />
+        </form>
       </React.Fragment>
     );
   }

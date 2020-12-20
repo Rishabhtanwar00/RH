@@ -29,9 +29,12 @@ class Registration extends React.Component {
       gender: "",
       marriage_status: "",
       bg: "",
+      last_donated: "",
       veneral_diseases: "",
       any_disease: "",
       photo: null,
+      error: true,
+      message: "",
     };
   }
 
@@ -46,8 +49,7 @@ class Registration extends React.Component {
       [e.target.bg]: e.target.value,
       [e.target.father]: e.target.value,
       [e.target.address]: e.target.value,
-      [e.target.donation_date]: e.target.value,
-      [e.target.donation_place]: e.target.value,
+      [e.target.last_donated]: e.target.value,
     });
   };
   getCookie(name1) {
@@ -80,6 +82,7 @@ class Registration extends React.Component {
       gender: this.state.gender,
       marriage_status: this.state.marriage_status,
       bg: this.state.bg,
+      last_donated: this.state.last_donated,
       veneral_diseases: this.state.veneral_diseases,
       any_disease: this.state.any_disease,
     };
@@ -97,7 +100,8 @@ class Registration extends React.Component {
         },
       })
       .then((res) => {
-        alert("data posted");
+        this.setState({ error: false, message: res.data.message });
+        console.log(res.data.message);
         console.log(res.data);
       });
   };
@@ -143,7 +147,7 @@ class Registration extends React.Component {
             <p className="heading">Registration</p>
             <div className="form">
               <input
-                className="input"
+                className="input image-input"
                 type="file"
                 name="photo"
                 id="photo"
@@ -296,25 +300,16 @@ class Registration extends React.Component {
                   value="no"
                 />
               </div>
-              {/* <p>Date of donation:</p>
+              <label htmlFor="last_donated"></label>
               <input
                 className="input"
                 type="date"
-                name="date"
-                id="date"
+                name="last_donated"
                 placeholder="Date of donation"
-                value={this.state.donation_date}
+                id="last_donated"
+                value={this.state.last_donated}
                 onChange={this.handleChange}
               />
-              <input
-                className="input"
-                type="text"
-                name="place"
-                id="place"
-                placeholder="Place of donation"
-                value={this.state.donation_place}
-                onChange={this.handleChange}
-              /> */}
               <p>
                 Have you any reason to believe that you may be infected by
                 either Hepatits, HIV/AIDS, and/or venereal disease?
@@ -471,6 +466,7 @@ class Registration extends React.Component {
               <button className="input" onClick={this.handleSubmit.bind(this)}>
                 submit
               </button>
+              {this.state.error ? <p>{this.state.message}</p> : null}
             </div>
           </div>
         </div>
