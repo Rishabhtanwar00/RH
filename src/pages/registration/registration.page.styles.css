@@ -87,6 +87,14 @@ input[type="date"] {
 .image-input {
   padding-bottom: 40px;
 }
+.form button {
+  background-color: #fe1f1a;
+  color: #fff;
+  font-size: 24px;
+  outline: none;
+  border: none;
+  margin: 20px 0 20px 30px;
+}
 @media screen and (max-width: 960px) {
   .registration-container {
     padding: 20px 0 0px 0;
@@ -102,19 +110,24 @@ input[type="date"] {
   .registration-container .details {
     width: 100%;
   }
+  .form small {
+    margin-left: -28px;
+  }
   .details .form {
     left: 0px;
     position: absolute;
     top: 200px;
     width: 100%;
-    margin-left: 34px;
     overflow: none;
+    align-items: center;
+    justify-content: flex-start;
   }
   .input {
     width: 250px;
   }
   .form p {
     max-width: 300px;
+    text-align: start;
   }
   .checkbox-container1,
   .checkbox-container1,
@@ -126,7 +139,37 @@ input[type="date"] {
     margin: 0;
   }
   .checkbox-container {
-    margin: 0 0 0 30px;
+    margin: -10px 0 0 -30px;
     padding: 0 0 30px 0;
+  }
+  .radio-buttons {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .checkboxContainer {
+    margin-left: -100px;
+    margin-top: -20px;
+  }
+  .form button {
+    margin: 20px 0 50px 0;
+  }
+  .radioButtons {
+    margin-left: 25px;
+  }
+  .radiobuttons1 {
+    margin-left: -40px;
+  }
+  .radiobuttons2 {
+    margin-left: -130px;
+  }
+  .radiobuttons3 {
+    margin-left: -150px;
+  }
+  .statement {
+    margin-left: -140px;
+  }
+  .statement1 {
+    margin-left: -40px;
   }
 }

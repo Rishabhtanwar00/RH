@@ -17,7 +17,7 @@ export const MenuItems = [
     title: "Host Camp",
     url: "#",
     cName: "nav-links",
-    to: "/dashboard",
+    to: "/",
   },
 
   {

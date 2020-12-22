@@ -30,7 +30,7 @@ const NavbarForMobile = () => {
           </div>
           <p>Donate blood</p>
         </Link>
-        <Link className="option" to="/dashboard">
+        <Link className="option" to="/">
           <div className="icon">
             <FiAward />
           </div>

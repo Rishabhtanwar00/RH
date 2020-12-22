@@ -1,12 +1,12 @@
 import React from "react";
 
-import "./hospital1.styles.css";
+import "./searchblood1.styles.css";
 
 import Image1 from "../../assets/search-1.png";
 
 import { Link } from "react-router-dom";
 
-class Hospital1 extends React.Component {
+class SearchBlood1 extends React.Component {
   constructor() {
     super();
     this.state = {};
@@ -14,10 +14,12 @@ class Hospital1 extends React.Component {
 
   render() {
     return (
-      <div className="hospital1-container">
+      <div className="Searchblood1-container">
         <div className="blood-groups">
           <div className="left-group">
-            <Link className="blood-group">A+</Link>
+            <Link className="blood-group" to="/hospital/A+">
+              A+
+            </Link>
             <Link className="blood-group">A-</Link>
             <Link className="blood-group">O+</Link>
             <Link className="blood-group">O-</Link>
@@ -37,4 +39,4 @@ class Hospital1 extends React.Component {
   }
 }
 
-export default Hospital1;
+export default SearchBlood1;

@@ -6,7 +6,7 @@ import Navbar from "../../components/navbar/navbar.component";
 
 import HospitalButtonCollection from "../../components/hospitalbutton-collection/hospitalbutton-collection.component";
 
-import Hospital1 from "../../components/hospital1/hospital1.component";
+import SearchBlood1 from "../../components/searchblood1/searchblood1.component";
 
 import NavbarForMobile from "../../components/navbarformobile/navbar.component";
 
@@ -20,7 +20,7 @@ class Hospital extends React.Component {
       <div className="hospital-container">
         <Navbar />
         <HospitalButtonCollection />
-        <Hospital1 />
+        <SearchBlood1 />
         <NavbarForMobile />
       </div>
     );

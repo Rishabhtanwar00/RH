@@ -201,7 +201,7 @@ class Registration extends React.Component {
                 value={this.state.dob}
                 onChange={this.handleChange}
               />
-              <div className="radio-buttons">
+              <div className="radio-buttons radioButtons">
                 <RadioButton
                   className="radio-button"
                   changed={this.radioChangeHandler1}
@@ -263,7 +263,7 @@ class Registration extends React.Component {
                 value={this.state.father}
                 onChange={this.handleChange}
               />
-              <div className="radio-buttons1 radio-buttons ">
+              <div className="radiobuttons1 radio-buttons ">
                 <RadioButton
                   className="radio-button"
                   changed={this.radioChangeHandler2}
@@ -281,8 +281,8 @@ class Registration extends React.Component {
                   value="unmarried"
                 />
               </div>
-              <p>Did you donate blood earlier?</p>
-              <div className="radio-buttons2 radio-buttons ">
+              <p className="statement1">Did you donate blood earlier?</p>
+              <div className="radiobuttons2 radio-buttons ">
                 <RadioButton
                   className="radio-button"
                   changed={this.radioChangeHandler3}
@@ -300,7 +300,7 @@ class Registration extends React.Component {
                   value="no"
                 />
               </div>
-              <label htmlFor="last_donated"></label>
+              <p className="statement">Date of Donation:</p>
               <input
                 className="input"
                 type="date"
@@ -314,7 +314,7 @@ class Registration extends React.Component {
                 Have you any reason to believe that you may be infected by
                 either Hepatits, HIV/AIDS, and/or venereal disease?
               </p>
-              <div className="radio-buttons3 radio-buttons ">
+              <div className="radiobuttons3 radio-buttons ">
                 <RadioButton
                   className="radio-button"
                   changed={this.radioChangeHandler4}
@@ -409,7 +409,7 @@ class Registration extends React.Component {
                 </div>
               </div>
               <p>Have you suffered any of the following?</p>
-              <div className="checkbox-container">
+              <div className="checkbox-container checkboxContainer">
                 <div className="checkbox-container1">
                   <CheckBox
                     className="check-box"

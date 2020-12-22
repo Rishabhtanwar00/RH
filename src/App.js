@@ -12,8 +12,6 @@ import AboutPage from "./pages/about/about.page";
 
 import ContactPage from "./pages/contact/contact.page";
 
-import NameForm from "./pages/form/form";
-
 import DashBoard from "./pages/dashboard/dashboard.page";
 
 import Hospital from "./pages/hospital/hospital.page";
@@ -32,7 +30,6 @@ class App extends React.Component {
             <Route path="/about" component={AboutPage} />
             <Route path="/contact-us" component={ContactPage} />
             <Route path="/dashboard" component={DashBoard} />
-            <Route path="/form" component={NameForm} />
             <Route path="/hospital" component={Hospital} />
           </Switch>
         </BrowserRouter>
