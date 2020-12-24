@@ -10,7 +10,7 @@ body {
   .navbar-for-mobile {
     display: block;
     position: fixed;
-    bottom: 0;
+    bottom: 50px;
     width: 80%;
     height: 50px;
     left: 50%;
@@ -20,7 +20,7 @@ body {
     padding: 10px 10px;
     border-radius: 100px;
     font-size: 13px;
-    margin: 10px 20px 30px 0px;
+    margin: 0 20px 0 0px;
   }
   .options {
     display: flex;
