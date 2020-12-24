@@ -9,18 +9,18 @@ body {
 @media screen and (max-width: 960px) {
   .navbar-for-mobile {
     display: block;
-    position: fixed;
-    bottom: 50px;
+    position: sticky;
+    bottom: 100px;
     width: 80%;
     height: 50px;
     left: 50%;
-    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
     filter: drop-shadow(0px 0px 20px rgba(146, 7, 5, 0.5));
     background: #fe1f1a;
     padding: 10px 10px;
     border-radius: 100px;
     font-size: 13px;
-    margin: 0 20px 0 0px;
+    margin: 0 10px 0 0px;
   }
   .options {
     display: flex;
