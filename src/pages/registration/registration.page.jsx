@@ -466,7 +466,6 @@ class Registration extends React.Component {
               <button className="input" onClick={this.handleSubmit.bind(this)}>
                 submit
               </button>
-              {this.state.error ? <p>{this.state.message}</p> : null}
             </div>
           </div>
         </div>

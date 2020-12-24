@@ -30,7 +30,7 @@ class App extends React.Component {
             <Route path="/about" component={AboutPage} />
             <Route path="/contact-us" component={ContactPage} />
             <Route path="/dashboard" component={DashBoard} />
-            <Route path="/hospital" component={Hospital} />
+            <Route path="/blood-bank" component={Hospital} />
           </Switch>
         </BrowserRouter>
       </div>
