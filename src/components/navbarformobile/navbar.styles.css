@@ -10,7 +10,7 @@ body {
   .navbar-for-mobile {
     display: block;
     position: fixed;
-    top: 85vh;
+    bottom: 0;
     width: 80%;
     height: 50px;
     left: 50%;
@@ -53,6 +53,5 @@ body {
 @media screen and (max-width: 400px) {
   .navbar-for-mobile {
     font-size: 12px;
-    top: 85vh;
   }
 }
