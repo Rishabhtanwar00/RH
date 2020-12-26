@@ -115,10 +115,10 @@ input[type="date"] {
   }
   .details .form {
     left: 0px;
-    position: absolute;
-    top: 200px;
+    position: relative;
+    /* top: 200px; */
     width: 100%;
-    overflow: none;
+    overflow: visible;
     align-items: center;
     justify-content: flex-start;
   }
@@ -126,8 +126,10 @@ input[type="date"] {
     width: 250px;
   }
   .form p {
+    height: 100vh;
     max-width: 300px;
     text-align: start;
+    overflow: none;
   }
   .checkbox-container1,
   .checkbox-container1,
