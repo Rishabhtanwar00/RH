@@ -44,7 +44,9 @@ const ContactPage = () => {
             <Input type="email" placeholder="Email" registrationInput />
             <Input type="text" placeholder="Full name" registrationInput />
             <Input type="text" placeholder="Message" registrationInput />
-            <CustomButton guideButton>send message</CustomButton>
+            <CustomButton className="button1" guideButton>
+              send message
+            </CustomButton>
           </form>
         </div>
       </div>
