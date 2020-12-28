@@ -6,7 +6,8 @@
   .navbar-for-mobile {
     display: block;
     position: fixed;
-    bottom: 100px;
+    bottom: 0px;
+    margin-bottom: 100px;
     width: 90vw;
     height: 50px;
     left: 50%;
