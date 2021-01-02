@@ -1,18 +1,11 @@
-.senderImage {
-  margin-left: 550px;
-  height: 400px;
-  width: 400px;
+.dashboard-container {
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-.mailStatement {
-  text-align: center;
-  font-size: 22px;
-}
-
-/* Tanwar customButton code only changes done using this code*/
-.guide-button {
-  width: 300px;
-  padding: 20px 10px;
-  margin: 50px 40px 50px 40px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.dashboard-details {
+  position: relative;
+  top: 80px;
 }
