@@ -1,16 +1,13 @@
 .donationhistory-container {
   width: 350px;
-  height: 450px;
+  /* height: 450px; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
-  overflow: scroll;
-  border-radius: 30px;
 }
 .donationhistory-container h2 {
-  margin: 150px 0px 0 35px;
+  margin: 0px 0px 0 35px;
   text-align: center;
   font-weight: 400;
 }

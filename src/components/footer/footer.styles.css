@@ -10,8 +10,7 @@
   padding: 30px 0 20px 0;
   background: rgb(233, 233, 233);
   width: 100%;
-  position: relative;
-  top: -50px;
+  margin-top: -50px;
 }
 .footer-container hr {
   width: 150px;
@@ -19,7 +18,7 @@
   position: relative;
   left: -120px;
   background: rgb(233, 233, 233);
-  top: -140px;
+  top: -90px;
 }
 .footer-container .social-icons {
   width: 100%;
@@ -28,8 +27,8 @@
   align-items: center;
   background: rgb(233, 233, 233);
   padding: 10px 0 50px 0;
-  position: relative;
-  top: -120px;
+  margin-top: -70px;
+  z-index: 1;
 }
 .footer-container .social-icons img {
   height: 100px;
@@ -41,10 +40,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
   background-color: #fff;
   padding: 0 50px;
-  position: relative;
-  top: -70px;
+  margin-top: -50px;
 }
 
 .footer-container .footer-content .quick-links,
@@ -55,6 +54,9 @@
   justify-content: flex-start;
   align-items: flex-start;
   margin: 0;
+}
+.know-us {
+  margin-top: -50px;
 }
 .footer-container .footer-content .quick-links {
   padding: 0 40px;
@@ -77,6 +79,8 @@
 .footer-container .footer-content .left-content {
   width: 60%;
   display: flex;
+  align-items: center;
+  flex-direction: row;
   justify-content: space-evenly;
 }
 .footer-container .footer-content .know-us .line {
@@ -84,6 +88,8 @@
 }
 .footer-container .footer-content .get-notification {
   width: 30%;
+  align-items: center;
+  justify-content: center;
 }
 .footer-container .footer-content .get-notification input {
   width: 280px;
@@ -104,8 +110,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  position: relative;
-  top: -50px;
+  margin-top: -100px;
 }
 .other-content .team-line {
   width: 60%;
@@ -188,7 +193,7 @@
     display: none;
   }
   .footer-container .social-icons {
-    top: -80px;
+    margin-top: -30px;
   }
   .footer-container .social-icons img {
     height: 60px;
@@ -197,6 +202,7 @@
   }
   .footer-container .footer-content {
     width: 100%;
+    margin-top: 0;
   }
   .footer-container .footer-content .quick-links .title2,
   .know-us .title2 {
