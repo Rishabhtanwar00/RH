@@ -6,7 +6,7 @@ import Navbar from "../navbar/navbar.component";
 
 import { Link } from "react-router-dom";
 
-import { AiOutlineRight, AiOutlineLeft } from "react-icons/ai";
+import { AiOutlineRight, AiOutlineLeft, AiOutlineCamera } from "react-icons/ai";
 
 import { HiDownload } from "react-icons/hi";
 
@@ -44,7 +44,12 @@ class DonorDetails extends React.Component {
                 <p>A+</p>
               </div>
               <div className="donor-image">
-                <img src={Donor} alt="" />
+                <div className="wrapper">
+                  <input type="file" className="my-file" />
+                </div>
+                <div className="camera">
+                  <AiOutlineCamera />
+                </div>
                 <h2 className="name">Olive Max(23 Years)</h2>
               </div>
             </div>

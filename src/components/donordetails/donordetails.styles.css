@@ -17,6 +17,43 @@
   flex-direction: column;
   width: 70%;
 }
+.wrapper {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  border: 5px solid #fe1f1a;
+  border-radius: 50%;
+  background-image: url(../../assets/donor.jpeg);
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+.my-file {
+  position: absolute;
+  bottom: 0;
+  outline: none;
+  background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+  z-index: 10;
+}
+.my-file::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.camera {
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  font-size: 24px;
+  color: #fff;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  background-color: #fe1f1a;
+  padding: 4px 8px 0px 8px;
+  cursor: pointer;
+}
 .form {
   padding: 30px;
   display: flex;
@@ -179,6 +216,9 @@
   .carddetails img {
     transform: rotate(90deg);
   }
+  .prevlink {
+    left: 80px;
+  }
 }
 @media screen and (max-width: 690px) {
   .inputs {
@@ -194,5 +234,8 @@
   }
   .carddetails .cardlinks {
     margin-top: -60px;
+  }
+  .prevlink {
+    left: 20px;
   }
 }
