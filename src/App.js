@@ -16,6 +16,8 @@ import DashBoard from "./pages/dashboard/dashboard.page";
 
 import Hospital from "./pages/hospital/hospital.page";
 
+import DonorDetails from "./components/donordetails/donordetails.component";
+
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 class App extends React.Component {
@@ -31,6 +33,7 @@ class App extends React.Component {
             <Route path="/contact-us" component={ContactPage} />
             <Route path="/dashboard" component={DashBoard} />
             <Route path="/blood-bank" component={Hospital} />
+            <Route path="/dashboard-profile" component={DonorDetails} />
           </Switch>
         </BrowserRouter>
       </div>

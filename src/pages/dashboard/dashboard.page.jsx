@@ -49,7 +49,7 @@ class Dashboard extends React.Component {
             <div className="donor-info">
               <div className="edit-details">
                 <div className="donor-links">
-                  <Link className="link">
+                  <Link className="link" to="/dashboard-profile">
                     <AiOutlineSetting />
                   </Link>
                   <Link className="link">

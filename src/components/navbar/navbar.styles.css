@@ -7,7 +7,7 @@
   align-items: center;
   font-size: 1rem;
   position: fixed;
-  z-index: 99;
+  z-index: 99999;
 }
 .navbar-logo {
   width: 100px;
