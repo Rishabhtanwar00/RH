@@ -12,8 +12,8 @@
   flex-direction: column;
 }
 .rhcard-details .rh-logo {
-  width: 120px;
-  height: 40px;
+  width: 100px;
+  height: 35px;
   padding: 20px 30px 10px 30px;
   /* background-color: #fff; */
 }
@@ -48,12 +48,14 @@
   text-decoration: none;
 }
 .rhcardfront-details .rhcard-frontlogo {
-  height: 100px;
-  width: 150px;
-  margin: -30px 0 0 0;
+  height: 200px;
+  width: 250px;
+  margin: 70px 0 0 0;
+  position: absolute;
 }
 .rhcard-sociallinks {
   margin: 10px 0 10px 300px;
+  z-index: 1;
 }
 .social-link {
   display: flex;
@@ -68,7 +70,17 @@
 }
 .rhcardfront-details .web-link {
   position: relative;
-  margin: 30px 270px 10px 0;
+  top: 100px;
+  margin: 0px 270px 10px 0;
+  z-index: 1;
+}
+@media screen and (max-width: 960px) {
+  .rhcard-sociallinks .social-link .icon {
+    margin-top: -10px;
+  }
+  .rhcard-sociallinks .social-link p {
+    margin-top: 0px;
+  }
 }
 @media screen and (max-width: 475px) {
   .rhcard-container {
@@ -88,5 +100,6 @@
   }
   .rhcardfront-details .web-link {
     margin: 10px 50vw 10px 0;
+    top: 68px;
   }
 }

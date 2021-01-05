@@ -2,7 +2,9 @@ import React from "react";
 
 import "./rhcard.styles.css";
 
-import RhLogo from "../../assets/logo.png";
+import RhLogo from "../../assets/rhcardlogo.png";
+
+import RhLogoFront from "../../assets/rhcardlogofront.png";
 
 import { Link } from "react-router-dom";
 
@@ -25,7 +27,7 @@ export const RhCardFront = () => {
             <FiYoutube className="icon" /> <p>@rhpositive</p>
           </Link>
         </div>
-        <img src={RhLogo} alt="" className="rhcard-frontlogo" />
+        <img src={RhLogoFront} alt="" className="rhcard-frontlogo" />
         <Link className="web-link">www.rhpositive.com</Link>
       </div>
     </div>

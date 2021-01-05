@@ -23,7 +23,7 @@
   position: relative;
   border: 5px solid #fe1f1a;
   border-radius: 50%;
-  background-image: url(../../assets/donor.jpeg);
+  /* background-image: url(../../assets/donor.jpeg); */
   background-size: 100% 100%;
   overflow: hidden;
 }
@@ -41,6 +41,11 @@
 }
 .my-file::-webkit-file-upload-button {
   visibility: hidden;
+}
+.wrapper .donorimage {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 .camera {
   position: absolute;

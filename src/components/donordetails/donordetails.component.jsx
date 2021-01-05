@@ -12,11 +12,9 @@ import { HiDownload } from "react-icons/hi";
 
 import RhCard from "../rhcard/rhcard.component";
 
+import Donor from "../../assets/donor.jpeg";
+
 import { RhCardFront } from "../rhcard/rhcard.component";
-
-import Card1 from "../../assets/card01.jpeg";
-
-import Card2 from "../../assets/card02.jpeg";
 
 import NavbarForMobile from "../navbarformobile/navbar.component";
 
@@ -46,6 +44,7 @@ class DonorDetails extends React.Component {
               <div className="donor-image">
                 <div className="wrapper">
                   <input type="file" className="my-file" />
+                  <img className="donorimage" src={Donor} alt="" />
                 </div>
                 <div className="camera">
                   <AiOutlineCamera />
