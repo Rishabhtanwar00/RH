@@ -1,0 +1,92 @@
+.rhcard-container {
+  height: 240px;
+  width: 450px;
+  background-image: url("../../assets/card.jpeg");
+  background-size: 100% 100%;
+}
+.rhcard-details {
+  /* position: absolute; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.rhcard-details .rh-logo {
+  width: 120px;
+  height: 40px;
+  padding: 20px 30px 10px 30px;
+  /* background-color: #fff; */
+}
+.rhcard-details .barcode {
+  width: 100px;
+  height: 50px;
+  padding: 0 30px;
+}
+.rhcard-details .rh-id {
+  color: #fff;
+  font-size: 30px;
+  padding: 0 20px;
+  letter-spacing: 5px;
+}
+.rhcard-details .donor-name {
+  color: #fff;
+  font-size: 28px;
+  padding: 0 20px;
+  letter-spacing: 5px;
+}
+.rhcardfront-details,
+.rhcard-sociallinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.rhcard-sociallinks .social-link,
+.web-link {
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+}
+.rhcardfront-details .rhcard-frontlogo {
+  height: 100px;
+  width: 150px;
+  margin: -30px 0 0 0;
+}
+.rhcard-sociallinks {
+  margin: 10px 0 10px 300px;
+}
+.social-link {
+  display: flex;
+  margin: -3px 0;
+}
+.social-link .icon {
+  font-size: 20px;
+  margin: 0 3px;
+}
+.social-link p {
+  margin-top: -3px;
+}
+.rhcardfront-details .web-link {
+  position: relative;
+  margin: 30px 270px 10px 0;
+}
+@media screen and (max-width: 475px) {
+  .rhcard-container {
+    width: 95vw;
+    height: 220px;
+  }
+  .rhcard-details .rh-id {
+    font-size: 25px;
+    letter-spacing: 3px;
+  }
+  .rhcard-details .donor-name {
+    font-size: 25px;
+    letter-spacing: 3px;
+  }
+  .rhcard-sociallinks {
+    margin-left: 55vw;
+  }
+  .rhcardfront-details .web-link {
+    margin: 10px 50vw 10px 0;
+  }
+}

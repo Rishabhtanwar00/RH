@@ -18,6 +18,8 @@ import Hospital from "./pages/hospital/hospital.page";
 
 import DonorDetails from "./components/donordetails/donordetails.component";
 
+import SearchBlood2 from "./components/searchblood2/searchblood2.component";
+
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 class App extends React.Component {
@@ -32,7 +34,8 @@ class App extends React.Component {
             <Route path="/about" component={AboutPage} />
             <Route path="/contact-us" component={ContactPage} />
             <Route path="/dashboard" component={DashBoard} />
-            <Route path="/blood-bank" component={Hospital} />
+            <Route path="/bloodbank" component={Hospital} />
+            <Route path="/bloodbank-A+" component={SearchBlood2} />
             <Route path="/dashboard-profile" component={DonorDetails} />
           </Switch>
         </BrowserRouter>

@@ -19,8 +19,10 @@ class Hospital extends React.Component {
     return (
       <div className="hospital-container">
         <Navbar />
-        <HospitalButtonCollection />
-        <SearchBlood1 />
+        <div className="bloodbankpage">
+          <HospitalButtonCollection />
+          <SearchBlood1 />
+        </div>
         <NavbarForMobile />
       </div>
     );

@@ -1,9 +1,10 @@
 .Searchblood1-container {
-  height: 50vh;
+  /* height: 50vh; */
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  overflow: hidden;
 }
 .blood-groups,
 .left-group,
@@ -40,6 +41,11 @@
 }
 
 @media screen and (max-width: 960px) {
+  .Searchblood1-container {
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+  }
   .hospital1-image img {
     display: none;
   }
@@ -49,5 +55,10 @@
   .blood-group {
     font-size: 18px;
     width: 30px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .blood-group {
+    margin-right: 5px;
   }
 }

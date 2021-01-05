@@ -174,20 +174,23 @@
   left: 200px;
 }
 .carddetails {
-  margin: 90px 60px 0 0;
+  margin: 90px 0px 0 0;
   display: flex;
   align-items: flex-end;
   flex-direction: column;
   justify-content: center;
 }
-.carddetails img {
-  height: 450px;
-  width: 240px;
+.carddetails .cardimage {
+  position: absolute;
+  transform: rotate(90deg);
+  right: -30px;
 }
 .carddetails .cardlinks {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 530px 70px 0 0;
 }
 .carddetails .cardlinks .link {
   font-size: 20px;
@@ -198,7 +201,7 @@
   border-radius: 5px;
   margin: 0 20px;
 }
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1015px) {
   .donordetails {
     flex-direction: column;
     justify-content: center;
@@ -207,14 +210,16 @@
     position: relative;
     align-items: center;
     justify-content: center;
-    margin: -40px 0 0 0;
+    margin: 20px 0 0 0;
   }
   .carddetails .cardlinks {
-    margin-top: -100px;
+    margin: 30px 0 0 0;
     padding-bottom: 40px;
   }
-  .carddetails img {
-    transform: rotate(90deg);
+  .carddetails .cardimage {
+    position: relative;
+    transform: rotate(0deg);
+    right: 0;
   }
   .prevlink {
     left: 80px;
@@ -228,13 +233,6 @@
   }
 }
 @media screen and (max-width: 475px) {
-  .carddetails img {
-    height: 90vw;
-    width: 200px;
-  }
-  .carddetails .cardlinks {
-    margin-top: -60px;
-  }
   .prevlink {
     left: 20px;
   }

@@ -16,6 +16,13 @@
   box-shadow: 3px 3px #950705;
   transition: all 250ms;
 }
+@media screen and (max-width: 1140px) {
+  .hospital-button {
+    font-size: 18px;
+    width: 180px;
+    padding: 20px;
+  }
+}
 @media screen and (max-width: 960px) {
   .hospital-button {
     margin: 20px;

@@ -12,9 +12,9 @@ import { HiDownload } from "react-icons/hi";
 
 import Donor from "../../assets/donor.jpeg";
 
-import Card1 from "../../assets/card1.jpeg";
+import { RhCardFront } from "../../components/rhcard/rhcard.component";
 
-import Card2 from "../../assets/card2.jpeg";
+import RhCard from "../../components/rhcard/rhcard.component";
 
 import Navbar from "../../components/navbar/navbar.component";
 
@@ -32,9 +32,7 @@ class Dashboard extends React.Component {
   toggleImage = () => {
     this.setState = { open: !this.state.open };
   };
-  getImageName = () => (this.state.open ? Card1 : Card2);
   render() {
-    const imageName = this.getImageName();
     return (
       <div className="dashboard-container">
         <Navbar />
@@ -76,7 +74,7 @@ class Dashboard extends React.Component {
               </div>
             </div>
             <div className="card-details">
-              <img src={imageName} alt="" />
+              <RhCard />
               <div className="card-links">
                 <Link className="link">
                   <AiOutlineRight />

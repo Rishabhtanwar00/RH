@@ -10,7 +10,9 @@ import { AiOutlineRight, AiOutlineLeft, AiOutlineCamera } from "react-icons/ai";
 
 import { HiDownload } from "react-icons/hi";
 
-import Donor from "../../assets/donor.jpeg";
+import RhCard from "../rhcard/rhcard.component";
+
+import { RhCardFront } from "../rhcard/rhcard.component";
 
 import Card1 from "../../assets/card01.jpeg";
 
@@ -28,9 +30,7 @@ class DonorDetails extends React.Component {
   toggleImage = () => {
     this.setState = { open: !this.state.open };
   };
-  getImageName = () => (this.state.open ? Card1 : Card2);
   render() {
-    const imageName = this.getImageName();
     return (
       <div className="donordetails-container">
         <Navbar />
@@ -89,14 +89,20 @@ class DonorDetails extends React.Component {
           </div>
           <div className="rightcontent">
             <div className="carddetails">
-              <img src={imageName} alt="" />
+              <div className="cardimage">
+                {this.state.open ? <RhCard /> : <RhCardFront />}
+              </div>
               <div className="cardlinks">
                 <Link className="link">
                   <AiOutlineRight />
                 </Link>
-                <Link className="link" onClick={this.toggleImage.bind(this)}>
+                <button
+                  type="button"
+                  className="link"
+                  onClick={this.toggleImage.bind(this)}
+                >
                   <HiDownload />
-                </Link>
+                </button>
               </div>
             </div>
           </div>

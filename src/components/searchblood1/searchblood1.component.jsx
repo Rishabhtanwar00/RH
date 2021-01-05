@@ -17,7 +17,7 @@ class SearchBlood1 extends React.Component {
       <div className="Searchblood1-container">
         <div className="blood-groups">
           <div className="left-group">
-            <Link className="blood-group" to="/hospital/A+">
+            <Link className="blood-group" to="/bloodbank-A+">
               A+
             </Link>
             <Link className="blood-group">A-</Link>
