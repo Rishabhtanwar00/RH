@@ -1,0 +1,86 @@
+.errorpage-container {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.errorpage-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 100px;
+}
+
+.errorpage-content .errorpage-image img {
+  height: 550px;
+  width: 35vw;
+}
+.errorpage-content .errorpage-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.errorpage-content .errorpage-details p {
+  font-size: 24px;
+  color: #fe1f1a;
+  margin: 0;
+}
+.errorpage-content .errorpage-details .errorpage-links {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  margin: 30px 0 0 0;
+}
+.errorpage-details .errorpage-links .redirectlink {
+  font-size: 20px;
+  width: 250px;
+  text-align: center;
+  padding: 10px;
+  background: #fe1f1a;
+  color: #fff;
+  margin: 20px;
+  text-decoration: none;
+  transition: all 250ms;
+}
+.errorpage-details .errorpage-links .redirectlink:hover {
+  background: #b60300;
+  transition: all 250ms;
+}
+.error-mssg {
+  position: absolute;
+  bottom: 0;
+  font-size: 24px;
+}
+@media screen and (max-width: 1260px) {
+  .errorpage-content .errorpage-image img {
+    height: 500px;
+    width: 35vw;
+  }
+}
+@media screen and (max-width: 960px) {
+  .errorpage-content .errorpage-image img {
+    height: 500px;
+    width: 80%;
+    opacity: 0.4;
+  }
+  .errorpage-content {
+    flex-direction: column;
+  }
+  .errorpage-content .errorpage-details {
+    position: absolute;
+  }
+  .error-mssg {
+    position: relative;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .errorpage-content .errorpage-details p {
+    max-width: 90%;
+    text-align: center;
+  }
+  .errorpage-details .errorpage-links {
+    flex-direction: column;
+  }
+}

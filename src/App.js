@@ -20,6 +20,8 @@ import DonorDetails from "./components/donordetails/donordetails.component";
 
 import SearchBlood2 from "./components/searchblood2/searchblood2.component";
 
+import ErrorPage from "./pages/errorpage/error.page";
+
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 class App extends React.Component {
@@ -37,6 +39,7 @@ class App extends React.Component {
             <Route path="/bloodbank" component={Hospital} />
             <Route path="/bloodbank-A+" component={SearchBlood2} />
             <Route path="/dashboard-profile" component={DonorDetails} />
+            <Route path="/error404" component={ErrorPage} />
           </Switch>
         </BrowserRouter>
       </div>
